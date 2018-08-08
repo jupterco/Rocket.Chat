@@ -252,7 +252,7 @@ jobs:
             bash .circleci/namefiles.sh
             # echo ".circleci/sandstorm.sh"
 
-            aws s3 cp $ROCKET_DEPLOY_DIR/ s3://download.rocket.chat/build/ --recursive
+            aws s3 cp $ROCKET_DEPLOY_DIR/ s3://rocket-chat-build/ --recursive
 
             # bash .circleci/update-releases.sh
             # bash .circleci/snap.sh
